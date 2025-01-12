@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>zepto</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="m-0 p-0">
-    <header>
-        <div class="w-full h-20 px-5 flex justify-between items-center sticky top-0">
-            <h1 class="md:text-3xl text-xl font-bold">BlinkIt</h1> 
-            <div class="flex">     
-                <input placeholder=" Search Here" class="">
-                <div class="text-black">
+    <!--Navbar starts here-->
+    <header class=" bg-gradient-to-r from-cyan-500 to-blue-500 w-full">
+        <div class="w-full h-20 px-5 flex justify-between items-center md:px-8 bg-gradient-to-b from-purple-300 via-white to-white fixed top-0 left-0">
+            <h1 class="md:text-3xl text-xl font-bold"><img src="zepto.svg" alt="" srcset=""></h1> 
+            <div class="flex border-2 rounded-md"> 
+                <div class="md:w-80 mr-2">    
+                <input placeholder=" Search Here" class="md:w-80 ">
+                </div>
+                <div class="text-black mx-2">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
@@ -23,165 +26,211 @@
                     Cart
                 </div>
             </div>
-        </div>
-        <!--<div class="flex w-100 md:hidden w-full"> 
-            <div class="md:block">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <!--mobie only starts-->
+            <div class="flex w-100 md:hidden"> 
+                <div class="md:block">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-            <input placeholder=" Search Here" class="w-full">
-        </div> -->
+            <!--ends-->
+        </div>    
     </header>
+    <!--navbar ends here-->
+
     <content>
-        <div class="lg:mx-32 mx-3">
+    <div class="xl:mx-32 mx-3 ">
         <div class="w-full"><img src="banner.jpg" alt="" srcset="" class="w-full rounded-md md:block hidden"></div>
-        <div class="">
+        <!--categories start-->
+        <div class=" md:mt-0 mt-20">
+
+
             <div>
                 <h2 class="font-bold my-4 ml-2 md:text-xl text-lg">Grocery and Kitchen</h2>
                 <div class="flex flex-wrap md:flex-nowrap">
-                    <div class="mx-2 lg:h-52 lg:w-72 w-48 h-44"><img src="fruits.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="dairy.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="atta.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="meat.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="masala.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="breakfast.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="packaaged_foods.webp" alt="" srcset=""></div>                
+                    <div class="mx-2  lg:h-52 lg:w-72 w-48 h-44 cursor-pointer"><img src="fruits.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="dairy.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="atta.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="meat.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="masala.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="breakfast.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="packaaged_foods.webp" alt="" srcset=""></div>                
                 </div>
             </div>
 
-            <div class="">
-                <h2  class="font-bold lg:mt-4 md:mt-5 ml-2 md:text-xl text-lg mt-20">Snacks & Drinks</h2>
+            <div class="mt-20 md:mt-5">
+                <h2  class="font-bold my-4 ml-2 md:text-xl text-lg ">Snacks & Drinks</h2>
                 <div class="flex flex-wrap md:flex-nowrap">
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 mb-16"><img src="tea.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="ice cre.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="frozen.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="sweets.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 "><img src="juice.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="chips.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="biscuit.webp" alt="" srcset=""></div>
-                    <div class="mx-2"><img src="" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 mb-16 cursor-pointer"><img src="tea.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="ice cre.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="frozen.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="sweets.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer "><img src="juice.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="chips.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="biscuit.webp" alt="" srcset=""></div>
                 </div>
             </div>
 
-            <div class="mt-20 lg:mt-5">
-                <h2 class="font-bold my-4 ml-2 md:text-xl text-lg">Grocery and Kitchen</h2>
+            <div class="mt-20 md:mt-5">
+                <h2 class="font-bold my-4 ml-2 md:text-xl text-lg">Beauty and Personal Care</h2>
                 <div class="flex flex-wrap md:flex-nowrap">
-                    <div class="mx-2 lg:h-52 lg:w-72 w-48 h-44"><img src="makeup.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="skincare.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="babycare.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="bathing_essentials.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="hair_care.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="jewellary.webp" alt="" srcset=""></div>
-                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24"><img src="perfumes.webp" alt="" srcset=""></div>                
+                    <div class="mx-2 lg:h-52 lg:w-72 w-48 h-40 md:h-36 cursor-pointer"><img src="makeup.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="skincare.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="babycare.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="bathing_essentials.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="hair_care.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="jewellary.webp" alt="" srcset=""></div>
+                    <div class="mx-2  lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="perfumes.webp" alt="" srcset=""></div>                
                 </div>
             </div>
 
-            <div class="">
-                <h2  class="font-bold lg:mt-4 md:mt-5 ml-2 md:text-xl text-lg mt-20">Snacks & Drinks</h2>
+            <div class="mt-20 md:mt-5">
+                <h2  class="font-bold my-4 ml-2 md:text-xl text-lg">Household Essentials</h2>
                 <div class="flex flex-wrap md:flex-nowrap">
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 mb-16"><img src="home_needs.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="kitchen.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="cleaning.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="electronics.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 "><img src="pet_care.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="toys.webp" alt="" srcset=""></div>
-                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24"><img src="stationary.webp" alt="" srcset=""></div>
-                    <div class="mx-2"><img src="" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 mb-16 cursor-pointer"><img src="home_needs.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="kitchen.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="cleaning.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="electronics.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer "><img src="pet_care.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="toys.webp" alt="" srcset=""></div>
+                    <div class="mx-2 lg:w-36 lg:h-36 w-24 h-24 cursor-pointer"><img src="stationary.webp" alt="" srcset=""></div>
                 </div>
             </div>
         </div>
+         <!--categories ends-->
 
-        <div>
-            <h2  class="font-bold lg:mt-4 md:my-5 ml-2 md:text-xl text-lg mt-20">Household Essentials</h2>
+        <!--shopping section starts-->
+         <div>
+            <h2  class="font-bold lg:mt-4 md:my-5 ml-2 md:text-xl text-lg mt-20">Electronics</h2>
             <div class="w-full overflow-x-auto">
                 <div class="flex w-max space-x-4">
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
                         <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="pigeon.webp" alt="" srcset=""></div>
-                        <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                        <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker </p>
                         <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                        <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                        <button class="border-2 ml-3">Add to Cart</button>
+                        <p class="text-base font-semibold ml-2 mt-2">Rs.1799</p>
+                        <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
                         <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="ambrane_electronics.webp" alt="" srcset=""></div>
-                        <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                        <p class="text-sm font-semibold ml-2 truncate">Ambrane 20W Type C Mobile Charger Adapter, Fast Charging For Android (Raap M20, White) </p>
                         <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                        <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                        <button class="border-2 ml-3">Add to Cart</button>
+                        <p class="text-base font-semibold ml-2 mt-2">Rs.379</p>
+                        <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
                         <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="agaro_hairdryer.webp" alt="" srcset=""></div>
-                        <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                        <p class="text-sm font-semibold ml-2 truncate">AGARO 2000 Watts Professional Hair Dryer with AC Motor, Concentrator, Diffuser,Comb,Hot and Cold Air</p>
                         <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                        <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                        <button class="border-2 ml-3">Add to Cart</button>
+                        <p class="text-base font-semibold ml-2 mt-2">Rs.1399</p>
+                        <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
                         <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="havells_iron.webp" alt="" srcset=""></div>
-                        <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                        <p class="text-sm font-semibold ml-2 truncate">Havells Temptor Iron</p>
                         <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                        <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                        <button class="border-2 ml-3">Add to Cart</button>
+                        <p class="text-base font-semibold ml-2 mt-2">Rs.619</p>
+                        <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
-                        <div class="mx-2 lg:w-40 lg:h-40"><img src="duracell_powerbank.webp" alt="" srcset=""></div>
-                        <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                        <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="duracell_powerbank.webp" alt="" srcset=""></div>
+                        <p class="text-sm font-semibold ml-2 truncate">Duracell 20000 mAh Power Bank - 22.5 W | Fast Charging</p>
                         <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                        <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                        <button class="border-2 ml-3">Add to Cart</button>
+                        <p class="text-base font-semibold ml-2 mt-2">Rs.3099</p>
+                        <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
-                        <div class="mx-2 lg:w-40 lg:h-40"><img src="portronics_mouse.webp" alt="" srcset=""></div>
-                        <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                        <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md[plkooooooooo[oklj[m]]]"><img src="portronics_mouse.webp" alt="" srcset=""></div>
+                        <p class="text-sm font-semibold ml-2 truncate">Portronics Toad 101 Wired Optical Mouse With 1200 DPI | 1.25 m Cable | 3 Million Click Life - Black</p>
                         <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                        <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                        <button class="border-2 ml-3">Add to Cart</button>
+                        <p class="text-base font-semibold ml-2 mt-2">Rs.99</p>
+                        <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
-                            <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="pigeon.webp" alt="" srcset=""></div>
-                            <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                            <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="agaro_steamer.webp" alt="" srcset=""></div>
+                            <p class="text-sm font-semibold ml-2 truncate">Agaro Signify Handheld Garment Steamer 1500W, Horizontal & Vertical Use,260 Ml Water Tank</p>
                             <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                            <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                            <button class="border-2 ml-3">Add to Cart</button>
+                            <p class="text-base font-semibold ml-2 mt-2">Rs.2253</p>
+                            <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
-                            <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="pigeon.webp" alt="" srcset=""></div>
-                            <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                            <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="boat_powerbank.webp" alt="" srcset=""></div>
+                            <p class="text-sm font-semibold ml-2 truncate">boAt Energyshroom PB400 Powerbank w/ 20000mAh Battery & 22.5W Fast Charging (Carbon Black)</p>
                             <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                            <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                            <button class="border-2 ml-3">Add to Cart</button>
+                            <p class="text-base font-semibold ml-2 mt-2">Rs.1499</p>
+                            <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
-                            <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="pigeon.webp" alt="" srcset=""></div>
-                            <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                            <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="agaro_volumizer.webp" alt="" srcset=""></div>
+                            <p class="text-sm font-semibold ml-2 truncate">AGARO 1200 Watts Professional Volumizer Hair Dryer,One Step Styler, Hot Air Blow Brush for Women</p>
                             <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                            <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                            <button class="border-2 ml-3">Add to Cart</button>
+                            <p class="text-base font-semibold ml-2 mt-2">Rs.1799</p>
+                            <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                     <div class="flex flex-col cursor-pointer w-40 mx-2">
-                            <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="pigeon.webp" alt="" srcset=""></div>
-                            <p class="text-sm font-semibold ml-2 truncate">Pigeon Pressure Cooker fdguahbFUzNKhGUzhkzguast</p>
+                            <div class="mx-2 lg:w-40 lg:h-40 border-2 rounded-md"><img src="philips_led.webp" alt="" srcset=""></div>
+                            <p class="text-sm font-semibold ml-2 truncate">Philips 0.5 W LED Deco Bulb - White | Energy Efficient</p>
                             <p class="text-sm font-semibold text-gray-600 ml-2">1 piece</p>
-                            <p class="text-base font-semibold ml-2 mt-2">Rs.45</p>
-                            <button class="border-2 ml-3">Add to Cart</button>
+                            <p class="text-base font-semibold ml-2 mt-2">Rs.49</p>
+                            <button class="border-2 ml-3 rounded-md">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!--shopping section ends-->
+
+        <!--how to use-->
+        <div>
+            <div class="font-bold mt-4 text-lg md:text-center">How it Works</div>
+            <div class="md:flex">
+                <div class="flex w-full border-2 rounded-md p-4 h-auto my-4 md:flex-col md:mx-3 md:items-center">
+                    <div class="mt-2">
+                        <img src="i1.svg" alt="" srcset="" class="w-32 md:w-28">
+                    </div>
+                    <div class="ml-6">
+                        <p class="font-semibold">Open the app</p>
+                        <div class="text-sm mt-2">Choose from over 7000 products across groceries, fresh fruits & veggies, meat, pet care, beauty items & more</div>
+                    </div>
+                </div>
+
+                <div class="flex w-full border-2 rounded-md p-4 h-auto my-4 md:flex-col md:mx-3 md:items-center">
+                    <div class="mt-2">
+                    <img src="i2.svg" alt="" srcset="" class="w-24 md:w-28" >
+                    </div>
+                    <div class="ml-6">
+                        <p class="font-semibold">Open the app</p>
+                        <div class="text-sm mt-2">Add your favourite items to the cart & avail the best offers</div>
+                    </div>
+                </div>
+
+                <div class="flex w-full border-2 rounded-md p-4 h-auto my-4 md:flex-col md:mx-3 md:items-center">
+                    <div class="mt-2">
+                    <img src="i3.svg" alt="" srcset="" class="w-20 md:w-28">
+                    </div>
+                    <div class="ml-6">
+                        <p class="font-semibold">Open the app</p>
+                        <div class="text-sm mt-2">Experience lighting-fast speed & get all your items delivered in 10 minutes                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ends-->
     </div>
+        
     </content>
      
-    <footer class="border-t-2 mt-10 mb-16 md:flex mr-4 ml-4">
+    <footer class="border-t-2 mt-10 md:flex mr-4 ml-4">
         <div class="flex w-full">
+
             <div class="md:text-3xl mt-7 md:w-64 w-24 text-xl">
-                BlinkIt
-                <div class="flex space-x-6">
+                <img src="zepto2.svg" alt="" srcset="" class="w-24 h-10">
+                <div class="flex space-x-6 text-gray-600 text-2xl md:mt-5 mt-3">
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-x-twitter"></i>
                 </div>
             </div>
+
             <div class="flex justify-around w-full mt-7 font-semibold">
-            
                 <div>
                     <ul>
                         <li><a href="" class="pt-3 pb-2">About</a></li>
@@ -214,7 +263,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col md:w-72 mt-7 font-semibold w-full ">
+
+        <div class="flex flex-col md:w-72 mt-7 font-semibold w-full mb-20">
             Download App
             <button class="border-2 p-2 text-sm font-semibold my-1 ml-4"> Get it on PlayStore</button>
             <button class="border-2 p-2 text-sm font-semibold my-1 ml-4">Get it on App Store</button>
